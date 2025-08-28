@@ -34,9 +34,9 @@ ltiLaunch(launchSettings).then((valid) => {
 
           let deepLink: any = {
             type: 'image',
-            title: 'Atomic Jolt',
-            text: 'Atomic Jolt Logo',
-            url: 'https://atomic-lti-worker.atomicjolt.win/images/atomicjolt_name.png',
+            title: 'Ein Logo',
+            text: 'Ein Logo',
+            url: 'https://ehsanghaffarii.ir/logo.png',
           };
 
           if (launchSettings.deepLinking?.accept_types) {
@@ -50,9 +50,9 @@ ltiLaunch(launchSettings).then((valid) => {
             } else if (launchSettings.deepLinking.accept_types.indexOf('link') >= 0) {
               deepLink = {
                 type: 'link',
-                title: 'Atomic Jolt',
-                text: 'Atomic Jolt Home Page',
-                url: 'https://atomicjolt.com',
+                title: 'Ein Jolt',
+                text: 'Ein Home Page',
+                url: 'https://ehsanghaffarii.ir',
               };
             }
           }
