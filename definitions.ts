@@ -1,5 +1,5 @@
 // This needs to be changed per project
-export const APPLICATION_NAME = "Atomic Worker LTI Tool";
+export const APPLICATION_NAME = "Worker LTI Tool";
 
 // Most of the defaults below should work fine.
 export const LTI_INIT_PATH = "lti/init";
