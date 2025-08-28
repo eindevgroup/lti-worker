@@ -1,0 +1,42 @@
+{
+  "title": "TutorifyApp",
+  "scopes": [
+    "https://canvas.instructure.com/lti/page_content/show",
+    "https://canvas.instructure.com/lti-ags/progress/scope/show",
+    "https://canvas.instructure.com/lti/account_lookup/scope/show",
+    "https://purl.imsglobal.org/spec/lti-nrps/scope/contextmembership.readonly",
+    "https://canvas.instructure.com/lti/public_jwk/scope/update",
+    "https://purl.imsglobal.org/spec/lti-ags/scope/score",
+    "https://purl.imsglobal.org/spec/lti-ags/scope/result.readonly",
+    "https://purl.imsglobal.org/spec/lti-ags/scope/lineitem.readonly",
+    "https://purl.imsglobal.org/spec/lti-ags/scope/lineitem"
+  ],
+  "extensions": [
+    {
+      "platform": "canvas.instructure.com",
+      "settings": {
+        "platform": "canvas.instructure.com",
+        "placements": [
+          {
+            "placement": "course_navigation",
+            "message_type": "LtiResourceLinkRequest",
+            "target_link_uri": "https://dev-ltigw.tutorify.ai/launch"
+          }
+        ]
+      },
+      "privacy_level": "public"
+    }
+  ],
+  "public_jwk": {},
+  "description": "LTI Advantage Test Tool ",
+  "custom_fields": {
+    "roles": "$Canvas.membership.roles",
+    "course_id": "$Canvas.course.id",
+    "user_name": "$User.username",
+    "section_names": "$com.instructure.User.sectionNames",
+    "is_root_account_admin": "$Canvas.user.isRootAccountAdmin"
+  },
+  "public_jwk_url": "https://dev-ltigw.tutorify.ai/keys",
+  "target_link_uri": "https://dev-ltigw.tutorify.ai/launch",
+  "oidc_initiation_url": "https://dev-ltigw.tutorify.ai/login"
+}
