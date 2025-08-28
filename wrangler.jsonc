@@ -11,12 +11,6 @@
   "observability": {
 		"enabled": true
 	},
-  "routes": [
-    {
-      "pattern": "lti-worker.atomicjolt.win",
-      "custom_domain": true
-    }
-  ],
   "kv_namespaces": [
     {
       "binding": "KEY_SETS",
